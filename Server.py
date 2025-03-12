@@ -18,6 +18,7 @@ while True:
         if not message:
             connectionSocket.close()
             continue
+        print(message)
     #The path is the second part of the HTTP header, identified by [1]
         filename = message.split()[1]
     #The extracted path of the HTTP requests include character ‘\’, so read
